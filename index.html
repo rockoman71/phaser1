@@ -28,7 +28,7 @@
     {
         //this.load.setBaseURL('http://labs.phaser.io');
 
-        this.load.image('sky', 'grid.png');
+        this.load.image('sky', 'gradient3.png');
         this.load.image('logorh', 'redhat.png');
         this.load.image('logoibm', 'ibm.png');
     }
@@ -49,7 +49,7 @@
         var logorh = this.physics.add.image(400, 100, 'logorh');
 
         logorh.setVelocity(200, 400);
-        logorh.setDisplaySize(100,100);
+        logorh.setDisplaySize(100,50);
      
         logorh.setBounce(1, 1);
         logorh.setCollideWorldBounds(true);
@@ -58,7 +58,7 @@
         var logoibm = this.physics.add.image(100, 100, 'logoibm');
 
         logoibm.setVelocity(100, 200);
-        logoibm.setDisplaySize(100,100);
+        logoibm.setDisplaySize(100,50);
         logoibm.setBounce(1, 1);
         logoibm.setCollideWorldBounds(true);
         logoibm.setAlpha(1);
