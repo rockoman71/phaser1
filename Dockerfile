@@ -1,3 +1,3 @@
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
-RUN sed -i "s/HHHH/"$HOSTNAME"/g" /usr/share/nginx/html/index.html
+RUN "sed -i 's/HHHH/'$HOSTNAME'/g' /usr/share/nginx/html/index.html"
